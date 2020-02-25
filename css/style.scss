@@ -276,6 +276,57 @@ img {
     }
 }
 
+
+/* Job Info section styling */
+
 .jobInfo {
-    border: 1px solid red;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 13px 15px;
+
+    &--apply {
+        background: blue;
+        border: 1px solid blue;
+        border-radius: 8px;
+        color: #fff;
+        font-weight: 550;
+        padding: 12px 0;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 90%;
+    }
+
+    &__companyInfo {
+        align-self: center;
+        margin-bottom: 25px;
+        text-align: center;
+        width: 100px;
+
+        &--name {
+            margin-top: 5px;
+        }
+    }
+
+    & img {
+        border: 1px solid grey;
+        border-radius: 8px;
+        padding: 10px 12px;
+    }
+
+    &__detail {
+        margin-bottom: 40px;
+        text-align: center;
+
+        &--title {
+            margin: 0;
+            margin-bottom: 12px;
+        }
+
+        &--desc {
+            margin: 0;
+        }
+    }
 }
