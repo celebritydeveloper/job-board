@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 16px;
+    margin: 0;
+    padding-top: 0;
+}
+
 img {
     height: auto;
     width: 100%;
@@ -64,4 +70,26 @@ img {
             margin: 0;
         }
     }
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 5% 20% 45% 30%;
+    margin-top: 50px;
+}
+
+.sidebar {
+    border: 1px solid red;
+}
+
+.iconBox {
+    border: 1px solid black;
+}
+
+.jobs {
+    border: 1px solid green;
+}
+
+.jobInfo {
+    border: 1px solid red;
 }
