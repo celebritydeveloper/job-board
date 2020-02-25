@@ -29,8 +29,9 @@ img {
 }
 
 .nav__menu {
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,7 +41,44 @@ img {
 }
 
 .nav__menu--link {
+  color: grey;
+  display: -ms-grid;
+  display: grid;
+  padding: 10px;
   text-decoration: none;
+}
+
+.nav__menu--link:hover {
+  margin-bottom: -35px;
+}
+
+.nav__menu--link:hover::after {
+  background: yellow;
+  border-radius: 50%;
+  content: "";
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: 25px;
+  padding: 2px;
+  height: 6px;
+  width: 6px;
+}
+
+.nav__menu--active {
+  font-weight: bolder;
+  margin-bottom: -35px;
+}
+
+.nav__menu--active::after {
+  background: green;
+  border-radius: 50%;
+  content: "";
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: 25px;
+  padding: 2px;
+  height: 6px;
+  width: 6px;
 }
 
 .nav__profile {

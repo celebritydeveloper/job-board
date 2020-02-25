@@ -20,12 +20,49 @@ img {
     }
 
     &__menu {
-        align-self: center;
+        align-items: center;
         display: flex;
         justify-content: space-evenly;
 
         &--link {
+            color: grey;
+            display: grid;
+            padding: 10px;
             text-decoration: none;
+        }
+
+        &--link:hover {
+            //font-weight: bold;
+            margin-bottom: -35px;
+        }
+
+        &--link:hover::after {
+            background: yellow;
+            border-radius: 50%;
+            content: "";
+            justify-self: center;
+            //display: block;
+            margin-top: 25px;
+            padding: 2px;
+            height: 6px;
+            width: 6px;
+        }
+
+        &--active {
+            font-weight: bolder;
+            margin-bottom: -35px;
+        }
+
+        &--active::after {
+            background: green;
+            border-radius: 50%;
+            content: "";
+            justify-self: center;
+            //display: block;
+            margin-top: 25px;
+            padding: 2px;
+            height: 6px;
+            width: 6px;
         }
         
     }
