@@ -75,6 +75,7 @@ img {
 .main {
     display: grid;
     grid-template-columns: 5% 20% 45% 30%;
+    height: 100vh;
     margin-top: 50px;
 }
 
@@ -82,8 +83,52 @@ img {
     border: 1px solid red;
 }
 
-.iconBox {
-    border: 1px solid black;
+.iconbox {
+    background: lightblue;
+    display: flex;
+    border-top-right-radius: 25px;
+    justify-content: center;
+    
+
+
+    &__icons {
+        list-style: none;
+        padding: 0;
+        padding-top: 15px;
+
+        &--list {
+            background: #fff;
+            border-radius: 5px;
+            color: grey;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            padding: 8px 10px;
+
+            &--active {
+                background: blue;
+                border-radius: 5px;
+                color: #fff;
+                cursor: pointer;
+                font-size: 1.1rem;
+                margin-bottom: 40px;
+                padding: 8px 10px;
+            }
+        }
+
+        &--list:hover {
+            background: blue;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            padding: 8px 10px;
+            transition: .4s ease-in;
+        }
+
+        
+    }
+    
 }
 
 .jobs {

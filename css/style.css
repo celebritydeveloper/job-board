@@ -94,6 +94,7 @@ img {
   display: grid;
   -ms-grid-columns: 5% 20% 45% 30%;
       grid-template-columns: 5% 20% 45% 30%;
+  height: 100vh;
   margin-top: 50px;
 }
 
@@ -101,8 +102,52 @@ img {
   border: 1px solid red;
 }
 
-.iconBox {
-  border: 1px solid black;
+.iconbox {
+  background: lightblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-right-radius: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.iconbox__icons {
+  list-style: none;
+  padding: 0;
+  padding-top: 15px;
+}
+
+.iconbox__icons--list {
+  background: #fff;
+  border-radius: 5px;
+  color: grey;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  padding: 8px 10px;
+}
+
+.iconbox__icons--list--active {
+  background: blue;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  padding: 8px 10px;
+}
+
+.iconbox__icons--list:hover {
+  background: blue;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  padding: 8px 10px;
+  -webkit-transition: .4s ease-in;
+  transition: .4s ease-in;
 }
 
 .jobs {
