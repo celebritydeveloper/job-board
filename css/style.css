@@ -90,6 +90,7 @@ img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  position: relative;
 }
 
 .nav__profile__pix {
@@ -119,5 +120,52 @@ img {
 .nav__profile--name {
   font-size: 0.9rem;
   margin: 0;
+}
+
+.nav__profile__link {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 120px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 20px;
+  position: absolute;
+  left: 150px;
+  top: 70px;
+  width: 165px;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.nav__profile__link--item {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.nav__profile__link--item:last-child {
+  margin-bottom: 0;
+}
+
+.nav__profile__link::before {
+  border-color: transparent transparent #e0e0e0 transparent;
+  border-style: solid;
+  border-width: 7px;
+  bottom: 100%;
+  content: " ";
+  left: 0;
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */
